@@ -30,10 +30,7 @@
 				the user hovers over the link or taps it, instead of
 				waiting for the 'click' event -->
     <li>
-      <a rel="prefetch" href="blog/{post.slug}">{post.title}</a>
+      <a rel="prefetch" href="blog/{post.slug}">{post.title} - {post.date}</a>
     </li>
-    <div>
-      {@html post.html}
-    </div>
   {/each}
 </ul>
