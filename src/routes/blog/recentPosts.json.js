@@ -33,11 +33,11 @@ function sortPosts(posts) {
 
 export function get(req, res) {
   const posts = getAllPosts('src/posts')
-  const sortedPosts = sortPosts(posts)
+  const [one, two, three] = sortPosts(posts)
 
   res.writeHead(200, {
     'Content-Type': 'application/json'
   })
 
-  res.end(JSON.stringify(sortedPosts))
+  res.end(JSON.stringify([one, two, three]))
 }
