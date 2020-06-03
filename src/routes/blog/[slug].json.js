@@ -25,7 +25,6 @@ export function get(req, res, next) {
   res.end(
     JSON.stringify({
       html,
-      slug: fileName.substring(0, fileName.length - 3),
       ...data
     })
   )
