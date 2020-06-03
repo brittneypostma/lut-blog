@@ -2,6 +2,12 @@
   import { fadeIn, fadeOut } from "../animate";
 </script>
 
+<style>
+  div {
+    padding: 0 20px;
+  }
+</style>
+
 <svelte:head>
   <title>Contact Me</title>
 </svelte:head>

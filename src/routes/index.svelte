@@ -3,10 +3,10 @@
   import Image from "svelte-image";
   import { fadeIn, fadeOut } from "../animate";
 
-  function doThing() {
-    console.log("doing thing");
-    goto("/blog");
-  }
+  // function doThing() {
+  //   console.log("doing thing");
+  //   goto("/blog");
+  // }
 </script>
 
 <style>
@@ -25,7 +25,8 @@
   }
 
   figure {
-    margin: 0 0 1em 0;
+    margin: 0 auto;
+    width: 50%;
   }
 
   p {
@@ -47,7 +48,7 @@
 
   <h1>Great success!</h1>
 
-  <button on:click={doThing}>Send me elsewhere!</button>
+  <!-- <button on:click={doThing}>Send me elsewhere!</button> -->
 
   <figure>
     <Image alt="Success Kid" src="successkid.jpg" />

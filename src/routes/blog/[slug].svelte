@@ -26,6 +26,10 @@
 		so we have to use the :global(...) modifier to target
 		all elements inside .content
 	*/
+
+  div {
+    padding: 0 20px;
+  }
   .content :global(h2) {
     font-size: 1.4em;
     font-weight: 500;
